@@ -16,7 +16,7 @@ namespace MercadinhoDaSacanagem
         public ComandosBanco()
         {
             //adicionar banco
-            con.ConnectionString = "Data Source=DESKTOP-QQOLUS3\\SQLEXPRESS;Initial Catalog=TrabalhoLP1;Integrated Security=True";
+            con.ConnectionString = "";
         }
 
         public void Conectar()
