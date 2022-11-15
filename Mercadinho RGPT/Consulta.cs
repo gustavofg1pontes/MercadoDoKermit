@@ -16,7 +16,7 @@ namespace Mercadinho_RGPT
     public partial class Consulta : Form
     {
         ComandosBanco cmd = new ComandosBanco();
-        
+        private bool alterando = false;
 
         public Consulta()
         {
@@ -77,11 +77,10 @@ namespace Mercadinho_RGPT
 
         private void button1_Click(object sender, EventArgs e)
         {
-            bool alterando = false;
             try { 
                 if(cmd.TemNoBanco(int.Parse(txbCode.Text)))
                 {
-                    if (!alterando) { 
+                    if (!this.alterando) { 
                         txbCode.Enabled = false;
                         txbNome.Enabled = true;
                         txbPreco.Enabled = true;
@@ -103,7 +102,7 @@ namespace Mercadinho_RGPT
                         button2.Enabled = true;
                         button4.Enabled = true;
                     }
-                    alterando = !alterando;
+                    this.alterando = !this.alterando;
                 }
                 else
                 {
