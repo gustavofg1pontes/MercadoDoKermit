@@ -54,7 +54,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.BackColor = System.Drawing.Color.Crimson;
             this.button2.Location = new System.Drawing.Point(137, 337);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(109, 54);
             this.button2.TabIndex = 25;
@@ -69,7 +69,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackColor = System.Drawing.Color.Lime;
             this.button1.Location = new System.Drawing.Point(7, 337);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(106, 54);
             this.button1.TabIndex = 24;
@@ -113,11 +113,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txbCode.Location = new System.Drawing.Point(240, 199);
-            this.txbCode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbCode.Margin = new System.Windows.Forms.Padding(2);
             this.txbCode.Name = "txbCode";
             this.txbCode.Size = new System.Drawing.Size(83, 20);
             this.txbCode.TabIndex = 21;
-            this.txbCode.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // label4
             // 
@@ -171,7 +170,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txbQuant.Enabled = false;
             this.txbQuant.Location = new System.Drawing.Point(240, 255);
-            this.txbQuant.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbQuant.Margin = new System.Windows.Forms.Padding(2);
             this.txbQuant.Name = "txbQuant";
             this.txbQuant.Size = new System.Drawing.Size(83, 20);
             this.txbQuant.TabIndex = 17;
@@ -183,7 +182,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txbValidade.Enabled = false;
             this.txbValidade.Location = new System.Drawing.Point(56, 255);
-            this.txbValidade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbValidade.Margin = new System.Windows.Forms.Padding(2);
             this.txbValidade.Name = "txbValidade";
             this.txbValidade.Size = new System.Drawing.Size(90, 20);
             this.txbValidade.TabIndex = 16;
@@ -195,7 +194,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txbPreco.Enabled = false;
             this.txbPreco.Location = new System.Drawing.Point(56, 199);
-            this.txbPreco.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbPreco.Margin = new System.Windows.Forms.Padding(2);
             this.txbPreco.Name = "txbPreco";
             this.txbPreco.Size = new System.Drawing.Size(90, 20);
             this.txbPreco.TabIndex = 15;
@@ -207,7 +206,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txbNome.Enabled = false;
             this.txbNome.Location = new System.Drawing.Point(56, 137);
-            this.txbNome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbNome.Margin = new System.Windows.Forms.Padding(2);
             this.txbNome.Name = "txbNome";
             this.txbNome.Size = new System.Drawing.Size(266, 20);
             this.txbNome.TabIndex = 14;
@@ -235,7 +234,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button3.BackColor = System.Drawing.Color.SteelBlue;
             this.button3.Location = new System.Drawing.Point(271, 337);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(109, 54);
             this.button3.TabIndex = 26;
@@ -289,7 +288,7 @@
             this.Controls.Add(this.txbPreco);
             this.Controls.Add(this.txbNome);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Consulta";
             this.Text = "Consultacs";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

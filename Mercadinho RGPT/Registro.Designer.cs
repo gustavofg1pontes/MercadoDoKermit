@@ -60,7 +60,6 @@
             this.label1.Size = new System.Drawing.Size(175, 27);
             this.label1.TabIndex = 0;
             this.label1.Text = "    REGISTRO    ";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txbNome
             // 
@@ -68,11 +67,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txbNome.Location = new System.Drawing.Point(27, 126);
-            this.txbNome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbNome.Margin = new System.Windows.Forms.Padding(2);
             this.txbNome.Name = "txbNome";
             this.txbNome.Size = new System.Drawing.Size(266, 20);
             this.txbNome.TabIndex = 1;
-            this.txbNome.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txbPreco
             // 
@@ -80,7 +78,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txbPreco.Location = new System.Drawing.Point(27, 188);
-            this.txbPreco.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbPreco.Margin = new System.Windows.Forms.Padding(2);
             this.txbPreco.Name = "txbPreco";
             this.txbPreco.Size = new System.Drawing.Size(90, 20);
             this.txbPreco.TabIndex = 2;
@@ -91,7 +89,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txbValidade.Location = new System.Drawing.Point(27, 244);
-            this.txbValidade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbValidade.Margin = new System.Windows.Forms.Padding(2);
             this.txbValidade.Name = "txbValidade";
             this.txbValidade.Size = new System.Drawing.Size(90, 20);
             this.txbValidade.TabIndex = 3;
@@ -102,7 +100,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txbQuant.Location = new System.Drawing.Point(211, 244);
-            this.txbQuant.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbQuant.Margin = new System.Windows.Forms.Padding(2);
             this.txbQuant.Name = "txbQuant";
             this.txbQuant.Size = new System.Drawing.Size(83, 20);
             this.txbQuant.TabIndex = 4;
@@ -121,7 +119,6 @@
             this.label2.Size = new System.Drawing.Size(146, 21);
             this.label2.TabIndex = 5;
             this.label2.Text = "Nome do Produto";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -137,7 +134,6 @@
             this.label3.Size = new System.Drawing.Size(54, 21);
             this.label3.TabIndex = 6;
             this.label3.Text = "Preço";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -153,7 +149,6 @@
             this.label4.Size = new System.Drawing.Size(73, 21);
             this.label4.TabIndex = 7;
             this.label4.Text = "Validade";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -169,7 +164,6 @@
             this.label5.Size = new System.Drawing.Size(66, 21);
             this.label5.TabIndex = 9;
             this.label5.Text = "Código";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // TxbCode
             // 
@@ -177,11 +171,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TxbCode.Location = new System.Drawing.Point(211, 188);
-            this.TxbCode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxbCode.Margin = new System.Windows.Forms.Padding(2);
             this.TxbCode.Name = "TxbCode";
             this.TxbCode.Size = new System.Drawing.Size(83, 20);
             this.TxbCode.TabIndex = 8;
-            this.TxbCode.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // label6
             // 
@@ -197,7 +190,6 @@
             this.label6.Size = new System.Drawing.Size(95, 21);
             this.label6.TabIndex = 10;
             this.label6.Text = "Quantidade";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // btnRegister
             // 
@@ -206,7 +198,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRegister.BackColor = System.Drawing.Color.Lime;
             this.btnRegister.Location = new System.Drawing.Point(27, 326);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(106, 54);
             this.btnRegister.TabIndex = 11;
@@ -221,7 +213,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.BackColor = System.Drawing.Color.SteelBlue;
             this.button2.Location = new System.Drawing.Point(189, 326);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(109, 54);
             this.button2.TabIndex = 12;
@@ -259,7 +251,7 @@
             this.Controls.Add(this.txbNome);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Registro";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Registro_Load);
