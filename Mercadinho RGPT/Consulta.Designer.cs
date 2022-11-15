@@ -68,6 +68,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackColor = System.Drawing.Color.Lime;
+            this.button1.Enabled = false;
             this.button1.Location = new System.Drawing.Point(7, 337);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";

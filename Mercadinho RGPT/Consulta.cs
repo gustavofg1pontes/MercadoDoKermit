@@ -38,9 +38,11 @@ namespace Mercadinho_RGPT
                 txbPreco.Text = produto.Preco.ToString();
                 txbValidade.Text = produto.Validade;
                 txbQuant.Text = produto.Quantidade.ToString();
+                button1.Enabled = true;
             }
             catch
             {
+                button1.Enabled = false;
                 MessageBox.Show("Insira um número de conta válido");
             }
         }
@@ -83,6 +85,7 @@ namespace Mercadinho_RGPT
                     else
                     {
                         Produto produto = new Produto(int.Parse(txbCode.Text), txbNome.Text, double.Parse(txbPreco.Text), txbValidade.Text, int.Parse(txbQuant.Text));
+                        if (!Produto.validarData(produto.Validade)) throw new Exception();
                         cmd.Alterar(produto);
                         MessageBox.Show("Produto alterado");
                         txbCode.Enabled = true;
@@ -92,6 +95,7 @@ namespace Mercadinho_RGPT
                         txbQuant.Enabled = false;
                         button2.Enabled = true;
                         button4.Enabled = true;
+                        button1.Enabled = false;
                     }
                     this.alterando = !this.alterando;
                 }
@@ -99,9 +103,9 @@ namespace Mercadinho_RGPT
                 {
                     MessageBox.Show("Primeiro, defina o produto");
                 }
-            }
+           }
              catch{
-                MessageBox.Show("Insira um número de conta válido");
+                MessageBox.Show("Insira um credenciais válidas");
             }
         }
     }
