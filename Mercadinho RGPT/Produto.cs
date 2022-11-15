@@ -27,5 +27,6 @@ namespace MercadinhoDaSacanagem
 
         public int Quantidade { get; set; }
 
+        public Produto() { }
     }
 }

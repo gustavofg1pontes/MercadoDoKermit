@@ -4,6 +4,7 @@ using System.Linq;
 using System.Data.SqlClient;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing.Printing;
 
 namespace MercadinhoDaSacanagem
 {
@@ -44,9 +45,7 @@ namespace MercadinhoDaSacanagem
 
         public Produto Consultar(int numero)
         {
-            int n = 0, quantidade = 0;
-            double preco = 0;
-            String nome = "", validade = "";
+            Produto produto = new Produto();
             cmd.Parameters.Clear();
             cmd.CommandText = "SELECT * FROM produtos WHERE numero = @numero";
             cmd.Parameters.AddWithValue("@numero", numero);
@@ -54,15 +53,15 @@ namespace MercadinhoDaSacanagem
             SqlDataReader rdr = cmd.ExecuteReader();
             while (rdr.Read())
             {
-                n = rdr.GetInt32(0);
-                nome = rdr.GetString(1);
-                preco = rdr.GetDouble(2);
-                validade = rdr.GetString(3);
-                quantidade = rdr.GetInt32(4);
+                produto.Numero = rdr.GetInt32(0);
+                produto.Nome = rdr.GetString(1);
+                produto.Preco = rdr.GetDouble(2);
+                produto.Validade = rdr.GetString(3);
+                produto.Quantidade = rdr.GetInt32(4);
             }
             rdr.Close();
             this.Desconectar();
-            return new Produto(n, nome, preco, validade, quantidade);
+            return produto;
         }
 
         public void Alterar(Produto produto)
